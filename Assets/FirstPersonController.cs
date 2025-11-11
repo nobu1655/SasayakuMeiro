@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FirstPersonController : MonoBehaviour
 {
-    public float speed = 5f;
+    public float movespeed = 5f;
+    public float runspeed = 2f;
+    public float rspeed = 10f;
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
@@ -31,6 +33,11 @@ public class FirstPersonController : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
+        float speed = movespeed;
+        if (Input.GetKey(KeyCode.LeftShift)) speed *= runspeed;
+
         controller.Move(move * speed * Time.deltaTime);
+ 
+     
     }
 }
