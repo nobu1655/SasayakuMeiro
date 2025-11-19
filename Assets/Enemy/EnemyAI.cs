@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform[] patrolPoints;      // ï¿½ï¿½ï¿½ï¿½|ï¿½Cï¿½ï¿½ï¿½g
-    public Transform player;              // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[
+    public Transform[] patrolPoints;      
+    public Transform player;              
 
-    public float chaseDistance = 8f;      // ï¿½ÇÕŠJï¿½nï¿½ï¿½ï¿½ï¿½
-    public float stopChaseDistance = 12f; // ï¿½ÇÕ‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public float chaseDistance = 160f;     
+    public float stopChaseDistance = 192f; 
 
     private UnityEngine.AI.NavMeshAgent agent;
     private int currentIndex = 0;
     private bool isChasing = false;
 
+    private int savedIndex = 0;
+    
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -24,20 +26,29 @@ public class EnemyAI : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, player.position);
 
-        // ï¿½ÇÕŠJï¿½n
+        
         if (!isChasing && dist < chaseDistance)
         {
             isChasing = true;
+
+            savedIndex = (currentIndex == 0) ? patrolPoints.Length - 1 : currentIndex - 1;
         }
 
-        // ï¿½ÇÕ‰ï¿½ï¿½ï¿½
+        
         if (isChasing && dist > stopChaseDistance)
         {
             isChasing = false;
-            GoToNextPoint();
+
+            // savedIndex ‚Ìƒ|ƒCƒ“ƒg‚Ö–ß‚·
+            agent.SetDestination(patrolPoints[savedIndex].position);
+
+            // šd—vF„‰ñÄƒXƒ^[ƒgˆÊ’u‚ğ savedIndex ‚ÌŸ‚Éİ’è
+            currentIndex = (savedIndex + 1) % patrolPoints.Length;
+
+            return;
         }
 
-        // ï¿½ï¿½Ô‚É‚ï¿½ï¿½ï¿½Äsï¿½ï¿½ï¿½Ø‘ï¿½
+       
         if (isChasing)
         {
             agent.SetDestination(player.position);
@@ -62,7 +73,7 @@ public class EnemyAI : MonoBehaviour
 
         agent.SetDestination(patrolPoints[currentIndex].position);
 
-        // ï¿½ï¿½ï¿½Ìƒ|ï¿½Cï¿½ï¿½ï¿½gï¿½Öiï¿½ÅŒï¿½Ü‚Åsï¿½ï¿½ï¿½ï¿½ï¿½çƒ‹ï¿½[ï¿½vï¿½j
+       
         currentIndex = (currentIndex + 1) % patrolPoints.Length;
     }
 }
