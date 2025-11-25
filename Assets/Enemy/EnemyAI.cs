@@ -4,65 +4,51 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform[] patrolPoints;      // ï¿½ï¿½ï¿½ï¿½|ï¿½Cï¿½ï¿½ï¿½g
-    public Transform player;              // ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[
+    public Transform player;          // Inspector‚ÅPlayer‚ğƒAƒTƒCƒ“
+    public float moveSpeed = 2f;      // ˆÚ“®‘¬“x
+    public float attackRange = 1.5f;  // UŒ‚ŠJn‹——£
+    public float attackCooldown = 1.5f; // UŒ‚ŠÔŠui•bj
 
-    public float chaseDistance = 8f;      // ï¿½ÇÕŠJï¿½nï¿½ï¿½ï¿½ï¿½
-    public float stopChaseDistance = 12f; // ï¿½ÇÕ‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-
-    private UnityEngine.AI.NavMeshAgent agent;
-    private int currentIndex = 0;
-    private bool isChasing = false;
+    Animator animator;
+    float nextAttackTime = 0f;
 
     void Start()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        GoToNextPoint();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        float dist = Vector3.Distance(transform.position, player.position);
+        if (player == null) return;
 
-        // ï¿½ÇÕŠJï¿½n
-        if (!isChasing && dist < chaseDistance)
-        {
-            isChasing = true;
-        }
+        // …•½•ûŒü‚Ì‹——£iY²‚Í–³‹‚µ‚Ä•½–Ê‚Å”»’fj
+        Vector3 flatSelf = new Vector3(transform.position.x, 0f, transform.position.z);
+        Vector3 flatPlayer = new Vector3(player.position.x, 0f, player.position.z);
+        float distance = Vector3.Distance(flatSelf, flatPlayer);
 
-        // ï¿½ÇÕ‰ï¿½ï¿½ï¿½
-        if (isChasing && dist > stopChaseDistance)
+        if (distance > attackRange)
         {
-            isChasing = false;
-            GoToNextPoint();
-        }
+            // ƒvƒŒƒCƒ„[‚ÖˆÚ“®
+            Vector3 direction = (flatPlayer - flatSelf).normalized;
+            // g‘Ì‚ÍƒvƒŒƒCƒ„[•ûŒü‚ğŒü‚­‚ªY‰ñ“]‚Ì‚İ
+            Vector3 lookTarget = new Vector3(player.position.x, transform.position.y, player.position.z);
+            transform.LookAt(lookTarget);
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
 
-        // ï¿½ï¿½Ô‚É‚ï¿½ï¿½ï¿½Äsï¿½ï¿½ï¿½Ø‘ï¿½
-        if (isChasing)
-        {
-            agent.SetDestination(player.position);
+            // Animator ‚É•à‚¢‚Ä‚¢‚é‚±‚Æ‚ğ’Ê’m
+            // ‚±‚±‚Í 0..1 ƒXƒP[ƒ‹‚Å“n‚µ‚Ä‚¢‚éi1 = •à‚«j
+            animator.SetFloat("Speed", 1f);
         }
         else
         {
-            Patrol();
+            // UŒ‚”ÍˆÍ“à
+            animator.SetFloat("Speed", 0f);
+
+            if (Time.time >= nextAttackTime)
+            {
+                animator.SetTrigger("Attack");
+                nextAttackTime = Time.time + attackCooldown;
+            }
         }
-    }
-
-    void Patrol()
-    {
-        if (agent.remainingDistance < 0.5f && !agent.pathPending)
-        {
-            GoToNextPoint();
-        }
-    }
-
-    void GoToNextPoint()
-    {
-        if (patrolPoints.Length == 0) return;
-
-        agent.SetDestination(patrolPoints[currentIndex].position);
-
-        // ï¿½ï¿½ï¿½Ìƒ|ï¿½Cï¿½ï¿½ï¿½gï¿½Öiï¿½ÅŒï¿½Ü‚Åsï¿½ï¿½ï¿½ï¿½ï¿½çƒ‹ï¿½[ï¿½vï¿½j
-        currentIndex = (currentIndex + 1) % patrolPoints.Length;
     }
 }
