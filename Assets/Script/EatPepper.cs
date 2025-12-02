@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class EatPepper : MonoBehaviour
 {
-  void OnTriggerEnter(Collider Other)
+    public int scoreValue = 1;
+
+    void OnTriggerEnter(Collider Other)
     {
         if(Other.CompareTag("Player"))
         {
+            ScoreManager.Instance.EatOneDot();
             Destroy(gameObject);
         }
     }
