@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     private UnityEngine.AI.NavMeshAgent agent;
     private int currentIndex = 0;
     private bool isChasing = false;
+    private Animator anim;
 
     // ★追加：追跡前に向かっていた巡回ポイントを保存する
     private int savedIndex = 0;
@@ -20,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         GoToNextPoint();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -59,6 +61,8 @@ public class EnemyAI : MonoBehaviour
         {
             Patrol();
         }
+
+        anim.SetFloat("Speed", agent.velocity.magnitude);
     }
 
     void Patrol()
