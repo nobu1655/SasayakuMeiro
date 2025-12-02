@@ -5,7 +5,7 @@ using UnityEngine;
 public class DotSpawer : MonoBehaviour
 {
     public GameObject dotPrefab;
-    public int dotCount = 100;          
+    public int dotCount = 100;
     public Vector3 areaSize = new Vector3(90, 5, 90); 
     public LayerMask groundLayer;      
 
