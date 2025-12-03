@@ -2471,19 +2471,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 341.7
+      value: 286.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2491,7 +2491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17
+      value: -13.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2525,6 +2525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6b02ba76d21c6974cbbe06866cccc171, type: 2}
     - target: {fileID: 7312207170140720799, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2631,11 +2635,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 20
+  m_Speed: 30
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 180
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
