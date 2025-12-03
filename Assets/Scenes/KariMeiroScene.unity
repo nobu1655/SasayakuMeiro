@@ -2306,12 +2306,12 @@ GameObject:
   - component: {fileID: 1528269937}
   - component: {fileID: 1528269936}
   - component: {fileID: 1528269935}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1528269935
 BoxCollider:
@@ -2813,6 +2813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6b02ba76d21c6974cbbe06866cccc171, type: 2}
     - target: {fileID: 7312207170140720799, guid: d37b7da3ff00c474d9a3fdc3e0edcc61, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3108,7 +3112,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1902999070
 BoxCollider:
