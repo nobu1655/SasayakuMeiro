@@ -5,17 +5,19 @@ using UnityEngine;
 public class FirstPersonController : MonoBehaviour
 {
     public float movespeed = 15f;
-    //public float runspeed = 3f;
+    public float runspeed = 25f;
     public float rspeed = 5f;
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
     float rotationX = 0f;
     CharacterController controller;
+    private Energy energy;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        energy = GetComponent<Energy>();
         Cursor.lockState = CursorLockMode.Locked; 
     }
 
@@ -34,7 +36,12 @@ public class FirstPersonController : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         float speed = movespeed;
-        //if (Input.GetKey(KeyCode.LeftShift)) speed *= runspeed;
+        bool shiftPressed = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+
+        if (shiftPressed && energy != null && energy.CanSprint())
+        {
+            speed = runspeed;
+        }
 
         controller.Move(move * speed * Time.deltaTime);
  
