@@ -59,6 +59,6 @@ public class Energy : MonoBehaviour
 
     public bool CanSprint()
     {
-        return currentEnergy > 0;
+        return currentEnergy > 1;
     }
 }
