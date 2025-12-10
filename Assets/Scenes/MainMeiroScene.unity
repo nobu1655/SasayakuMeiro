@@ -16575,6 +16575,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059802650}
     m_Modifications:
+    - target: {fileID: 881255444862461433, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b260dcf0f2e8f443ab1a7cbed9f4aae, type: 2}
     - target: {fileID: 986319247995429075, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -19921,6 +19925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059802650}
     m_Modifications:
+    - target: {fileID: 881255444862461433, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b260dcf0f2e8f443ab1a7cbed9f4aae, type: 2}
     - target: {fileID: 986319247995429075, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -43626,6 +43634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059802650}
     m_Modifications:
+    - target: {fileID: 881255444862461433, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b260dcf0f2e8f443ab1a7cbed9f4aae, type: 2}
     - target: {fileID: 986319247995429075, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -44899,6 +44911,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059802650}
     m_Modifications:
+    - target: {fileID: 881255444862461433, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b260dcf0f2e8f443ab1a7cbed9f4aae, type: 2}
     - target: {fileID: 986319247995429075, guid: 75d26aa0520f97a4faf6690db9ed82b2, type: 3}
       propertyPath: m_RootOrder
       value: -1
