@@ -9,9 +9,15 @@ public class EnemyAI : MonoBehaviour
     public float chaseDistance = 40f;
     public float stopChaseDistance = 48f;
 
+    public float attackRange = 2.0f;
+    public float attackCooldown = 1.5f;
+
+    private float attackTimer = 0f;
+
     private UnityEngine.AI.NavMeshAgent agent;
     private int currentIndex = 0;
     private bool isChasing = false;
+    private bool isAttacking = false;
     private Animator anim;
 
     // ★追加：追跡前に向かっていた巡回ポイントを保存する
@@ -26,6 +32,24 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (isAttacking)
+        {
+            attackTimer -= Time.deltaTime;
+
+            if (attackTimer <= 0f)
+            {
+                isAttacking = false;
+                agent.isStopped = false;
+
+                // 巡回に戻す
+                isChasing = false;
+                agent.SetDestination(patrolPoints[currentIndex].position);
+            }
+            return;
+        }
+
+        attackTimer -= Time.deltaTime;
+
         float dist = Vector3.Distance(transform.position, player.position);
 
         // --- 追跡開始 ---
@@ -55,7 +79,27 @@ public class EnemyAI : MonoBehaviour
         // --- 追跡中 ---
         if (isChasing)
         {
-            agent.SetDestination(player.position);
+            if (dist <= attackRange)
+            {
+                agent.isStopped = true;
+                anim.SetFloat("Speed", 0);
+
+                LookAtPlayer();
+
+                if (attackTimer <= 0f)
+                {
+                    isAttacking = true;
+                    agent.isStopped = true;
+
+                    anim.SetTrigger("Attack");
+                    attackTimer = attackCooldown;
+                }
+            }
+            else
+            {
+                agent.isStopped = false;
+                agent.SetDestination(player.position);
+            }
         }
         else
         {
@@ -81,5 +125,20 @@ public class EnemyAI : MonoBehaviour
 
         // 次のポイントへ進める（元のまま）
         currentIndex = (currentIndex + 1) % patrolPoints.Length;
+    }
+
+    void LookAtPlayer()
+    {
+        Vector3 dir = player.position - transform.position;
+        dir.y = 0f; // 高さ方向は無視
+
+        if (dir == Vector3.zero) return;
+
+        Quaternion targetRot = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.Slerp(
+            transform.rotation,
+            targetRot,
+            Time.deltaTime * 10f // 向く速さ
+        );
     }
 }
