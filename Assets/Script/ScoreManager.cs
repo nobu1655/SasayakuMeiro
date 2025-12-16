@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
+    public TMP_Text ScoreText;
     public int totalDots = 105;
     public int remainingDots;
 
@@ -17,6 +18,7 @@ public class ScoreManager : MonoBehaviour
   public void EatOneDot()
     {
         remainingDots--;
-        Debug.Log("c‚è‚ÌŒÂ”" + remainingDots + "/" + totalDots);
+        // Debug.Log("c‚è‚ÌŒÂ”" + remainingDots + "/" + totalDots);
+        ScoreText.text = remainingDots + "/" + totalDots;
     }
 }
