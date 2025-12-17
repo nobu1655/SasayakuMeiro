@@ -11,20 +11,10 @@ public class EnemyAttack : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // CharacterController ‚ª‚ ‚éê‡‚Íˆê“x–³Œø‰»
-            CharacterController cc = other.GetComponent<CharacterController>();
-            if (cc != null)
+            PlayerDamage damage = other.GetComponent<PlayerDamage>();
+            if (damage != null)
             {
-                cc.enabled = false;
-            }
-
-            // ‰ŠúˆÊ’u‚É–ß‚·
-            other.transform.position = playerStartPoint.position;
-
-            // Ä‚Ñ—LŒø‰»
-            if (cc != null)
-            {
-                cc.enabled = true;
+                damage.OnHit();
             }
         }
     }

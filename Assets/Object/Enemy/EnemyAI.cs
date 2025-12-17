@@ -14,6 +14,8 @@ public class EnemyAI : MonoBehaviour
 
     private float attackTimer = 0f;
 
+    private EnemyAttack enemyAttack;
+
     private UnityEngine.AI.NavMeshAgent agent;
     private int currentIndex = 0;
     private bool isChasing = false;
@@ -28,6 +30,9 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         GoToNextPoint();
         anim = GetComponent<Animator>();
+
+        enemyAttack = GetComponentInChildren<EnemyAttack>();
+        enemyAttack.enabled = false;
     }
 
     void Update()
@@ -40,6 +45,8 @@ public class EnemyAI : MonoBehaviour
             {
                 isAttacking = false;
                 agent.isStopped = false;
+
+                enemyAttack.enabled = false;
 
                 // èÑâÒÇ…ñﬂÇ∑
                 isChasing = false;
@@ -92,6 +99,8 @@ public class EnemyAI : MonoBehaviour
                     agent.isStopped = true;
 
                     anim.SetTrigger("Attack");
+                    enemyAttack.enabled = true;
+
                     attackTimer = attackCooldown;
                 }
             }
