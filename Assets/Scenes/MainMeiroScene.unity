@@ -9661,6 +9661,11 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
+  viewDistance: 15
+  viewAngle: 60
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!195 &202944727
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10093,7 +10098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829ed323328bd474cbda57f88d5470c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 352486919}
   playerStartPoint: {fileID: 1680919845}
 --- !u!135 &215953097
 SphereCollider:

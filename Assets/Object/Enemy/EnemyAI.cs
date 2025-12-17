@@ -12,6 +12,11 @@ public class EnemyAI : MonoBehaviour
     public float attackRange = 2.0f;
     public float attackCooldown = 1.5f;
 
+    [Header("Vision")]
+    public float viewDistance = 15f; //視界距離
+    public float viewAngle = 60f;　　//視野角
+    public LayerMask obstacleMask;
+
     private float attackTimer = 0f;
 
     private EnemyAttack enemyAttack;
@@ -60,13 +65,10 @@ public class EnemyAI : MonoBehaviour
         float dist = Vector3.Distance(transform.position, player.position);
 
         // --- 追跡開始 ---
-        if (!isChasing && dist < chaseDistance)
+        if (!isChasing && CanSeePlayer())
         {
             isChasing = true;
-
-            // ★追跡に入った瞬間の巡回indexを保存！
             savedIndex = (currentIndex == 0) ? patrolPoints.Length - 1 : currentIndex - 1;
-            // ↑こうしないと「既に++された後のindex」になるため
         }
 
         // --- 追跡終了 ---
@@ -149,5 +151,46 @@ public class EnemyAI : MonoBehaviour
             targetRot,
             Time.deltaTime * 10f // 向く速さ
         );
+    }
+
+    bool CanSeePlayer()
+    {
+        Vector3 dirToPlayer = (player.position - transform.position).normalized;
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        // 距離チェック
+        if (distanceToPlayer > viewDistance)
+            return false;
+
+        // 視野角チェック
+        float angle = Vector3.Angle(transform.forward, dirToPlayer);
+        if (angle > viewAngle)
+            return false;
+
+        // Ray で遮蔽物チェック
+        Ray ray = new Ray(transform.position + Vector3.up * 1.5f, dirToPlayer);
+        if (Physics.Raycast(ray, out RaycastHit hit, viewDistance, ~obstacleMask))
+        {
+            if (hit.collider.CompareTag("Player"))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    
+    //視界のの可視化
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, viewDistance);
+
+        Vector3 left = Quaternion.Euler(0, -viewAngle, 0) * transform.forward;
+        Vector3 right = Quaternion.Euler(0, viewAngle, 0) * transform.forward;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + left * viewDistance);
+        Gizmos.DrawLine(transform.position, transform.position + right * viewDistance);
     }
 }
