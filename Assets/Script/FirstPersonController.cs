@@ -5,7 +5,7 @@ using UnityEngine;
 public class FirstPersonController : MonoBehaviour
 {
     public float movespeed = 15f;
-    public float runspeed = 25f;
+    public float runspeed = 20f;
     public float rspeed = 5f;
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
