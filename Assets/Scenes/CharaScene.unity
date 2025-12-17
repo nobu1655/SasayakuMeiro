@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &16210681
 GameObject:
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &21608650
 PrefabInstance:
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &45685406
 PrefabInstance:
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &91016655 stripped
 GameObject:
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &95783371
 PrefabInstance:
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &106355595
 PrefabInstance:
@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &143685216
 PrefabInstance:
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &172114680 stripped
 GameObject:
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &174148984
 PrefabInstance:
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &217890355
 PrefabInstance:
@@ -2171,7 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &269509749
 GameObject:
@@ -2421,7 +2421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &286931377 stripped
 GameObject:
@@ -2461,7 +2461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &288302083 stripped
 GameObject:
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &299278889
 PrefabInstance:
@@ -3120,7 +3120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &397326032 stripped
 GameObject:
@@ -3160,7 +3160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &398242793
 PrefabInstance:
@@ -3279,7 +3279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &433833454
 PrefabInstance:
@@ -3746,8 +3746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec678188c7eca04b9e86db69e126535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalDots: 105
-  remainingDots: 0
+  scoreNumberText: {fileID: 0}
 --- !u!4 &498500333
 Transform:
   m_ObjectHideFlags: 0
@@ -3801,7 +3800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &505386757
 PrefabInstance:
@@ -3920,7 +3919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &507744364
 PrefabInstance:
@@ -4001,6 +4000,134 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1526954091}
   m_SourcePrefab: {fileID: 100100000, guid: 0493ef630497dee4e89ec6a99619a11e, type: 3}
+--- !u!1 &547387672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547387674}
+  - component: {fileID: 547387673}
+  m_Layer: 0
+  m_Name: BGM (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &547387673
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547387672}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2ef63524dd2737c49bb26c4141662361, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 25
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &547387674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547387672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.9, y: 9, z: 19.208933}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 138
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &552805006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,7 +4271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &575464539
 PrefabInstance:
@@ -4500,7 +4627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &620706659 stripped
 GameObject:
@@ -4540,7 +4667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &636648662
 PrefabInstance:
@@ -4659,7 +4786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &641473853
 PrefabInstance:
@@ -4936,7 +5063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &657690738
 PrefabInstance:
@@ -5213,7 +5340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &718511130
 GameObject:
@@ -5573,7 +5700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &790949725 stripped
 GameObject:
@@ -5613,7 +5740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &793183496 stripped
 GameObject:
@@ -5653,7 +5780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &806057164 stripped
 GameObject:
@@ -5693,7 +5820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &812909403
 PrefabInstance:
@@ -5891,7 +6018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &838958234
 PrefabInstance:
@@ -6168,7 +6295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &859573264
 PrefabInstance:
@@ -6734,7 +6861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &940543554
 PrefabInstance:
@@ -6932,7 +7059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &945192633
 PrefabInstance:
@@ -7209,7 +7336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &975047074 stripped
 GameObject:
@@ -7249,7 +7376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &976573910 stripped
 GameObject:
@@ -7289,7 +7416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &982842951
 PrefabInstance:
@@ -7513,7 +7640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1006489798
 PrefabInstance:
@@ -7790,7 +7917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1036268633
 PrefabInstance:
@@ -7909,7 +8036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1076615665 stripped
 GameObject:
@@ -7949,7 +8076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1111172643 stripped
 GameObject:
@@ -7989,7 +8116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1115654034 stripped
 GameObject:
@@ -8029,7 +8156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1125044789
 PrefabInstance:
@@ -8148,7 +8275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1144047835
 GameObject:
@@ -8293,7 +8420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1176818199 stripped
 GameObject:
@@ -8333,8 +8460,136 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
+--- !u!1 &1179007612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1179007614}
+  - component: {fileID: 1179007613}
+  m_Layer: 0
+  m_Name: BGM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1179007613
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179007612}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b00af8aa95c42f44db3d85691351d43d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 25
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1179007614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179007612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.2, y: 1.3, z: 6.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 137
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1187317366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8452,7 +8707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1214244355
 PrefabInstance:
@@ -8781,7 +9036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1285409218
 PrefabInstance:
@@ -8979,7 +9234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1298996129
 PrefabInstance:
@@ -9098,7 +9353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1333047131
 PrefabInstance:
@@ -9296,7 +9551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1344433823
 PrefabInstance:
@@ -9415,7 +9670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1350885152
 PrefabInstance:
@@ -9534,7 +9789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1373786630
 PrefabInstance:
@@ -9653,7 +9908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1392031915
 PrefabInstance:
@@ -10009,7 +10264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1455092461 stripped
 GameObject:
@@ -10049,7 +10304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1463253973 stripped
 GameObject:
@@ -10089,7 +10344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1468257832
 PrefabInstance:
@@ -10208,7 +10463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1485879737 stripped
 GameObject:
@@ -10248,7 +10503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1487170213 stripped
 GameObject:
@@ -10288,7 +10543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1488230712 stripped
 GameObject:
@@ -10328,7 +10583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1490940269
 GameObject:
@@ -10473,7 +10728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1491641872 stripped
 GameObject:
@@ -10513,7 +10768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1498474466
 PrefabInstance:
@@ -10632,7 +10887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1507900066 stripped
 GameObject:
@@ -10672,7 +10927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1526954090 stripped
 GameObject:
@@ -10712,7 +10967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1536911758 stripped
 GameObject:
@@ -10752,7 +11007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1543183310 stripped
 GameObject:
@@ -10792,7 +11047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1549599311
 PrefabInstance:
@@ -11121,7 +11376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1576692380 stripped
 GameObject:
@@ -11161,7 +11416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1583947424 stripped
 GameObject:
@@ -11201,7 +11456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1592570208 stripped
 GameObject:
@@ -11241,7 +11496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1594501150 stripped
 GameObject:
@@ -11281,7 +11536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1602589864
 GameObject:
@@ -11426,7 +11681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1629259240 stripped
 GameObject:
@@ -11466,7 +11721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1631214112
 PrefabInstance:
@@ -11751,7 +12006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1657227293
 GameObject:
@@ -12080,7 +12335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1716844193 stripped
 GameObject:
@@ -12120,7 +12375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1721700101
 PrefabInstance:
@@ -12239,7 +12494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1730753027
 PrefabInstance:
@@ -12416,7 +12671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!65 &1740390813
 BoxCollider:
@@ -12477,7 +12732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1745506927 stripped
 GameObject:
@@ -12517,7 +12772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1753597737
 PrefabInstance:
@@ -12636,7 +12891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1774388483
 GameObject:
@@ -12781,7 +13036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1780843969 stripped
 GameObject:
@@ -12821,7 +13076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1785885145 stripped
 GameObject:
@@ -12861,7 +13116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1792639150
 PrefabInstance:
@@ -13138,7 +13393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1828126824
 GameObject:
@@ -13362,7 +13617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1836403944
 PrefabInstance:
@@ -13481,7 +13736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1851975938 stripped
 GameObject:
@@ -13521,7 +13776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1862413248 stripped
 GameObject:
@@ -13561,7 +13816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1862811890 stripped
 GameObject:
@@ -13601,7 +13856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1865432304 stripped
 GameObject:
@@ -13641,7 +13896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1873481688 stripped
 GameObject:
@@ -13681,7 +13936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1877060647
 GameObject:
@@ -13905,7 +14160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1897771120
 PrefabInstance:
@@ -14195,7 +14450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1917812366
 PrefabInstance:
@@ -14314,7 +14569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1933835989
 PrefabInstance:
@@ -14433,7 +14688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1939059937
 PrefabInstance:
@@ -14710,7 +14965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1983133739 stripped
 GameObject:
@@ -14750,7 +15005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &1990726212 stripped
 GameObject:
@@ -14790,7 +15045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &1995359831
 PrefabInstance:
@@ -15304,7 +15559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &2021268589 stripped
 GameObject:
@@ -15344,7 +15599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &2057788347
 PrefabInstance:
@@ -15463,7 +15718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1 &2088018357 stripped
 GameObject:
@@ -15503,7 +15758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
 --- !u!1001 &2108143694
 PrefabInstance:
@@ -15778,5 +16033,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7008b30ae9a24504ea1380c16149ebc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  scoreToDecrease: 1
   mapObject: {fileID: 0}
