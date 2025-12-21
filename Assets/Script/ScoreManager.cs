@@ -1,35 +1,25 @@
 using UnityEngine;
-using TMPro; // TextMeshProを使用するために必要
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    // インスペクターからTextMeshProのコンポーネントをD&Dで設定
-    public TextMeshProUGUI scoreNumberText;
-
-    // 現在のスコア（宝石の残り数など）
-    private int currentScore = 208;
+    public int gemCount = 212; // 合計の数
+    public TextMeshProUGUI scoreText;
 
     void Start()
     {
-        // 初期表示を更新
-        UpdateScoreDisplay();
+        UpdateText();
     }
 
-    // 外部からスコアを減らすためのパブリックメソッド
-    public void DecreaseScore(int amount)
+    // 宝石から「取られたよ！」と教えてもらう関数
+    public void GemCollected()
     {
-        currentScore -= amount;
-
-        // 表示を更新
-        UpdateScoreDisplay();
+        gemCount--;
+        UpdateText();
     }
 
-    // TextMeshProの表示を更新するメソッド
-    private void UpdateScoreDisplay()
+    void UpdateText()
     {
-        if (scoreNumberText != null)
-        {
-            scoreNumberText.text = currentScore.ToString();
-        }
+        scoreText.text = gemCount.ToString();
     }
 }

@@ -1,22 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class EatPepper : MonoBehaviour
 {
-    public int scoreToDecrease = 1;
+    public int gemCount = 212;
+    public TextMeshProUGUI scoreText;
     public GameObject mapObject;
     private ScoreManager scoreManager;
+
+    void Start()
+    {
+        scoreManager= GameObject.FindObjectOfType<ScoreManager>();
+    }
 
     void OnTriggerEnter(Collider Other)
     {
         if(Other.CompareTag("Player"))
         {
-            if (scoreManager != null)
-            {
-                scoreManager.DecreaseScore(scoreToDecrease);
-            }
+            scoreManager.GemCollected();
             Destroy(mapObject);
             Destroy(gameObject);
         }
