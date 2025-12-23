@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.SceneManagement;
 using System;
 
 public class EatPepper : MonoBehaviour
 {
     public int gemCount = 212;
-    public TextMeshProUGUI scoreText;
     public GameObject mapObject;
     private ScoreManager scoreManager;
 
