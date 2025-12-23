@@ -4408,10 +4408,15 @@ MonoBehaviour:
   - {fileID: 1537011045}
   - {fileID: 1196460572}
   player: {fileID: 914522102}
-  chaseDistance: 50
-  stopChaseDistance: 55
+  chaseDistance: 100
+  stopChaseDistance: 105
   attackRange: 20
   attackCooldown: 1.5
+  viewDistance: 200
+  viewAngle: 150
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!195 &1943269571
 NavMeshAgent:
   m_ObjectHideFlags: 0
