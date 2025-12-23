@@ -7,15 +7,30 @@ public class EatPepper : MonoBehaviour
 {
     public int scoreToDecrease = 1;
     public GameObject mapObject;
-    private ScoreManager scoreManager;
+    private ScoreManager ScoreManager;
 
+    void Start()
+    {
+        // シーン内の ScoreManager スクリプトを探して参照を取得する
+        // 取得した参照を private な ScoreManager 変数に格納する
+        ScoreManager = FindObjectOfType<ScoreManager>();
+
+        if (ScoreManager == null)
+        {
+            Debug.LogError("EatPepper: ScoreManagerが見つかりません。シーンにScoreManagerがアタッチされているか確認してください。");
+        }
+        else
+        {
+            Debug.Log("EatPepper: ScoreManagerの参照を正常に取得しました。");
+        }
+    }
     void OnTriggerEnter(Collider Other)
     {
-        if(Other.CompareTag("Player"))
+        if (Other.CompareTag("Player"))
         {
-            if (scoreManager != null)
+            if (ScoreManager != null)
             {
-                scoreManager.DecreaseScore(scoreToDecrease);
+                ScoreManager.DecreaseScore(1);
             }
             Destroy(mapObject);
             Destroy(gameObject);
