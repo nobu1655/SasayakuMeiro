@@ -12880,7 +12880,7 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
-  viewDistance: 200
+  viewDistance: 300
   viewAngle: 180
   obstacleMask:
     serializedVersion: 2
@@ -81291,7 +81291,7 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
-  viewDistance: 200
+  viewDistance: 300
   viewAngle: 180
   obstacleMask:
     serializedVersion: 2
@@ -92476,7 +92476,7 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
-  viewDistance: 200
+  viewDistance: 300
   viewAngle: 180
   obstacleMask:
     serializedVersion: 2
