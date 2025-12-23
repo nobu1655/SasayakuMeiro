@@ -3,7 +3,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int gemCount = 212; // ‡Œv‚Ì”
+    public int gemCount = 211; // ‡Œv‚Ì”
     public TextMeshProUGUI scoreText;
 
     void Start()
