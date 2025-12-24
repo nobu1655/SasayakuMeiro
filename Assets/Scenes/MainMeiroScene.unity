@@ -20736,7 +20736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 40
-  runspeed: 200
+  runspeed: 90
   rspeed: 5
   mouseSensitivity: 2
   cameraTransform: {fileID: 1993716551}
@@ -27711,7 +27711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec678188c7eca04b9e86db69e126535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gemCount: 212
+  gemCount: 210
   scoreText: {fileID: 106495279}
 --- !u!4 &485390820
 Transform:
