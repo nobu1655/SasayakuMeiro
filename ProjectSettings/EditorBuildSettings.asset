@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 81355b118a08c4743970047f6f0f9f7a
+  - enabled: 1
     path: Assets/Scenes/MainMeiroScene.unity
     guid: aaa6e24d47f28514f8a1cd697e300ec0
+  - enabled: 1
+    path: Assets/Scenes/CleareScene.unity
+    guid: 88ae1a4d5608c5545b29416b12dca6e2
   m_configObjects: {}

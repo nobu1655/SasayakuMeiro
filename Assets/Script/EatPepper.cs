@@ -6,7 +6,6 @@ using System;
 
 public class EatPepper : MonoBehaviour
 {
-    public int gemCount = 212;
     public GameObject mapObject;
     private ScoreManager scoreManager;
 
