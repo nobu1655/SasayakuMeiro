@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e940e3f6260198b4facfdb6e37eeb037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextSceneName: MainMeiroScene
+  NextSceneName: Tutorial2Scene
 --- !u!4 &1175045427
 Transform:
   m_ObjectHideFlags: 0
@@ -483,14 +483,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.47058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 57225f13878b54748b8eef86950c0552, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -566,17 +566,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                                                       \u30EB\u30FC\u30EB\u8AAC\u660E\n\u30FB\u30DE\u30C3\u30D7\u5185\u306E\u30C0\u30A4\u30E4\u3092\u3059\u3079\u3066\u96C6\u3081\u308B\n\u30FB\u6575\u306B\u3064\u304B\u307E\u308B\u3068\u30B9\u30BF\u30FC\u30C8\u5730\u70B9\u306B\u623B\u308B\n\n\n\n\n\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u6E96\u5099\u304C\u3067\u304D\u305F\u3089\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u30B9\u30BF\u30FC\u30C8\n\n"
+  m_text: "                                                              \u30EB\u30FC\u30EB\u8AAC\u660E\n\n\u30FB\u30DE\u30C3\u30D7\u5185\u306B\u3042\u308B\u5B9D\u77F3\u3092\u3059\u3079\u3066\u96C6\u3081\u3088\u3046\n\n\u30FB\u5236\u9650\u6642\u9593\u5185\u306B\u3059\u3079\u3066\u306E\u5B9D\u77F3\u3092\u96C6\u3081\u308B\u3068\u30AF\u30EA\u30A2\n\n\u30FB\u6642\u9593\u5185\u306B\u5B9D\u77F3\u3092\u3059\u3079\u3066\u96C6\u3081\u3089\u308C\u306A\u304B\u3063\u305F\u5834\u5408\u3001\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u3068\u306A\u308B\n\n\u30FB\u30DE\u30C3\u30D7\u5185\u3092\u5F98\u5F8A\u3057\u3066\u3044\u308B\u6575\u306B\u6355\u307E\u308B\u3068\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u306F\u521D\u671F\u4F4D\u7F6E\u306B\u623B\u3055\u308C\u308B\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u5DE6\u30AF\u30EA\u30C3\u30AF\u3067\u6B21\u306B\u9032\u3080\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f0b62b30711f13b4880084162a3f8955, type: 2}
-  m_sharedMaterial: {fileID: 2796144449019751545, guid: f0b62b30711f13b4880084162a3f8955, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9e013cfcfbb9f284ba8b8b399f5ed17d, type: 2}
+  m_sharedMaterial: {fileID: 1936233205343187621, guid: 9e013cfcfbb9f284ba8b8b399f5ed17d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -593,8 +593,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
