@@ -1,34 +1,53 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using DG.Tweening; // これを忘れずに追加
 
 public class ScoreManager : MonoBehaviour
 {
-    public int gemCount = 210; // 合計の数
+    public int gemCount = 210;
     public TextMeshProUGUI scoreText;
+    public float rotateDuration = 0.2f; // 回転の速さ
 
     bool isCleared = false;
+
     void Start()
     {
-        UpdateText();
+        // 初期表示
+        scoreText.text = gemCount.ToString();
     }
 
-    // 宝石から「取られたよ！」と教えてもらう関数
     public void GemCollected()
     {
         if (isCleared) return;
         gemCount--;
-        UpdateText();
 
-        if(gemCount==0)
+        // アニメーション付きでテキスト更新
+        UpdateTextWithAnimation();
+
+        if (gemCount <= 0)
         {
             isCleared = true;
-            SceneManager.LoadScene("CleareScene");
+            // 少しだけ待ってからシーン遷移させると、最後の回転が見えて綺麗です
+            DOVirtual.DelayedCall(0.5f, () => SceneManager.LoadScene("CleareScene"));
         }
     }
 
-    void UpdateText()
+    void UpdateTextWithAnimation()
     {
-        scoreText.text = gemCount.ToString();
+        // DOTweenのシーケンス作成
+        Sequence seq = DOTween.Sequence();
+
+        // 1. 今の数字を上に90度倒す
+        seq.Append(scoreText.transform.DORotate(new Vector3(90, 0, 0), rotateDuration).SetEase(Ease.InQuad));
+
+        // 2. 倒れた瞬間に文字を変えて、下側に配置する
+        seq.AppendCallback(() => {
+            scoreText.text = gemCount.ToString();
+            scoreText.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+        });
+
+        // 3. 下から正面（0度）まで起き上がらせる
+        seq.Append(scoreText.transform.DORotate(new Vector3(0, 0, 0), rotateDuration).SetEase(Ease.OutBack));
     }
 }
