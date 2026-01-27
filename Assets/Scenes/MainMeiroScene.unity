@@ -12990,6 +12990,9 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
+  normalSpeed: 70
+  hardSpeed: 100
+  speedUpGemCount: 100
   viewDistance: 300
   viewAngle: 180
   obstacleMask:
@@ -77519,7 +77522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345435420}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 482.8, y: 0, z: -481}
+  m_LocalPosition: {x: 477.4, y: 0, z: -475.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -82190,6 +82193,9 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
+  normalSpeed: 70
+  hardSpeed: 100
+  speedUpGemCount: 100
   viewDistance: 300
   viewAngle: 180
   obstacleMask:
@@ -93447,6 +93453,9 @@ MonoBehaviour:
   stopChaseDistance: 150
   attackRange: 25
   attackCooldown: 1.5
+  normalSpeed: 70
+  hardSpeed: 100
+  speedUpGemCount: 100
   viewDistance: 300
   viewAngle: 180
   obstacleMask:

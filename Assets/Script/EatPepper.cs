@@ -18,7 +18,7 @@ public class EatPepper : MonoBehaviour
     {
         if(Other.CompareTag("Player"))
         {
-            scoreManager.GemCollected();
+            ScoreManager.Instance.GemCollected();
             Destroy(mapObject);
             Destroy(gameObject);
         }

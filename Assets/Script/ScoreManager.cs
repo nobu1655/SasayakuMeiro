@@ -5,11 +5,18 @@ using DG.Tweening; // これを忘れずに追加
 
 public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager Instance;　
+
     public int gemCount = 210;
     public TextMeshProUGUI scoreText;
     public float rotateDuration = 0.2f; // 回転の速さ
 
     bool isCleared = false;
+
+    void Awake() 
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -21,6 +28,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (isCleared) return;
         gemCount--;
+        scoreText.text = gemCount.ToString(); 
 
         // アニメーション付きでテキスト更新
         UpdateTextWithAnimation();

@@ -12,6 +12,12 @@ public class EnemyAI : MonoBehaviour
     public float attackRange = 2.0f;
     public float attackCooldown = 1.5f;
 
+    [Header("Difficulty")]
+    public float normalSpeed = 3.5f;   // 通常時のスピード 
+    public float hardSpeed = 6.0f;     // 強化後のスピード 
+    public int speedUpGemCount = 100;  // 宝石残り数の条件 
+    private bool speedUpDone = false;  // 一度だけ実行するため 
+
     [Header("Vision")]
     public float viewDistance = 15f; //視界距離
     public float viewAngle = 60f;　　//視野角
@@ -35,6 +41,7 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         GoToNextPoint();
         anim = GetComponent<Animator>();
+        agent.speed = normalSpeed;
 
         enemyAttack = GetComponentInChildren<EnemyAttack>();
         enemyAttack.enabled = false;
@@ -42,6 +49,8 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        CheckEnemySpeed();
+
         if (isAttacking)
         {
             attackTimer -= Time.deltaTime;
@@ -192,5 +201,21 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + left * viewDistance);
         Gizmos.DrawLine(transform.position, transform.position + right * viewDistance);
+    }
+
+    void CheckEnemySpeed()
+    {
+        // すでに強化済みなら何もしない
+        if (speedUpDone) return;
+
+        // ScoreManager が存在していて
+        // 宝石が100個以下になったら
+        if (ScoreManager.Instance != null &&
+            ScoreManager.Instance.gemCount <= speedUpGemCount)
+        {
+            speedUpDone = true;
+            agent.speed = hardSpeed;
+            Debug.Log("Enemy Speed UP!");
+        }
     }
 }
