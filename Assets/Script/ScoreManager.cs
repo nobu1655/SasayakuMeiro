@@ -5,7 +5,8 @@ using DG.Tweening; // ‚±‚ê‚ğ–Y‚ê‚¸‚É’Ç‰Á
 
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager Instance;
+    public static ScoreManager Instance;@
+
     public int gemCount = 210;
     public TextMeshProUGUI scoreText;
     public float rotateDuration = 0.2f; // ‰ñ“]‚Ì‘¬‚³
@@ -35,13 +36,6 @@ public class ScoreManager : MonoBehaviour
         if (gemCount <= 0)
         {
             isCleared = true;
-
-            // 
-            double timeLeft = Timer.Instance.GetRemainingSeconds();
-
-            // 
-            ResultData.rank = Score.CalculateRank((float)timeLeft);
-
             // ­‚µ‚¾‚¯‘Ò‚Á‚Ä‚©‚çƒV[ƒ“‘JˆÚ‚³‚¹‚é‚ÆAÅŒã‚Ì‰ñ“]‚ªŒ©‚¦‚ÄãY—í‚Å‚·
             DOVirtual.DelayedCall(0.5f, () => SceneManager.LoadScene("CleareScene"));
         }
