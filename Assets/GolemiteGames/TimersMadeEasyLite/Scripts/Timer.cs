@@ -63,10 +63,13 @@ public class Timer : MonoBehaviour
     bool timerRunning = false;
     bool timerPaused = false;
     public double timeRemaining;
-    
+    public static Timer Instance;
+
+
 
     private void Awake()
     {
+        Instance = this;
 
         if(!standardText)
         if(GetComponent<Text>())
