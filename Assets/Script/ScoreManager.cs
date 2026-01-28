@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using DG.Tweening; // ‚±‚ê‚ð–Y‚ê‚¸‚É’Ç‰Á
+using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class ScoreManager : MonoBehaviour
         if (gemCount <= 0)
         {
             isCleared = true;
+            double timeLeft = Timer.Instance.timeRemaining;
+
+            ResultData.rank = Score.CalculateRank((float)timeLeft);
+
             // ­‚µ‚¾‚¯‘Ò‚Á‚Ä‚©‚çƒV[ƒ“‘JˆÚ‚³‚¹‚é‚ÆAÅŒã‚Ì‰ñ“]‚ªŒ©‚¦‚ÄãY—í‚Å‚·
             DOVirtual.DelayedCall(0.5f, () => SceneManager.LoadScene("CleareScene"));
         }
