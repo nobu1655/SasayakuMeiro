@@ -13,6 +13,6 @@ public class ClearSceneManager : MonoBehaviour
         float timeLeft = ScoreManager.Instance != null ? (float)Timer.Instance.GetRemainingSeconds() : 0;
         int minutes = Mathf.FloorToInt(timeLeft / 60);
         int seconds = Mathf.FloorToInt(timeLeft % 60);
-        timeText.text = string.Format("Time Left: {0:00}:{1:00}", minutes, seconds);
+        timeText.text = string.Format("Time: {0:00}:{1:00}", minutes, seconds);
     }
 }
