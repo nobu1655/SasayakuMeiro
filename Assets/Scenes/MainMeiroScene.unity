@@ -20969,7 +20969,7 @@ MonoBehaviour:
   movespeed: 40
   runspeed: 100
   rspeed: 5
-  mouseSensitivity: 1
+  mouseSensitivity: 1.5
   cameraTransform: {fileID: 1993716551}
 --- !u!143 &352486915
 CharacterController:
