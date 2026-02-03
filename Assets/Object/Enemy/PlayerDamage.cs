@@ -8,9 +8,13 @@ public class PlayerDamage : MonoBehaviour
     public Transform playerStartPoint;
     public CharacterController cc;
 
-    public Image fadeImage;   // 黒いUI画像
+    public Image fadeImage;   
     public float stunTime = 1f;
     public float fadeTime = 1f;
+
+    public Timer timer;
+    public float penaltyTime = 10f;
+
 
     bool isDamaged = false;
 
@@ -18,6 +22,17 @@ public class PlayerDamage : MonoBehaviour
     {
         if (isDamaged) return;
         StartCoroutine(DamageSequence());
+
+        if (Timer.Instance != null)
+        {
+            Timer.Instance.timeRemaining -= penaltyTime;
+
+            //マイナスになりすぎ防止
+            if (Timer.Instance.timeRemaining < 0)
+            {
+                Timer.Instance.timeRemaining = 0;
+            }
+        }
     }
 
     IEnumerator DamageSequence()
