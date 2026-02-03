@@ -926,8 +926,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360355947}
-  - component: {fileID: 1360355946}
   - component: {fileID: 1360355948}
+  - component: {fileID: 1360355949}
   m_Layer: 0
   m_Name: TitleScene
   m_TagString: Untagged
@@ -935,19 +935,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1360355946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360355945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fac03a57e87566046b0d14cc956944bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextSceneName: TitleScene
 --- !u!4 &1360355947
 Transform:
   m_ObjectHideFlags: 0
@@ -973,6 +960,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0008e4f99c2ebd14cad5ac9e830006a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1360355949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360355945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf4b22d87b1aa24ea8872952e0e1825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1402949607
@@ -1369,16 +1368,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1360355945}
-        m_TargetAssemblyTypeName: SceneNext, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1360355949}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: JumpToScenes
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TitleScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2068200732
